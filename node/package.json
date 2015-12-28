@@ -1,0 +1,21 @@
+{
+  "name": "ipquery",
+  "version": "1.0.0",
+  "description": "ipquery for node",
+  "main": "ipquery.js",
+  "scripts": {
+    "test": "mocha test/ "
+  },
+  "keywords": [
+    "ipquery"
+  ],
+  "author": "liangchao",
+  "license": "ISC",
+  "dependencies": {
+    "thrift": "^0.9.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^8.0.1"
+  }
+}
