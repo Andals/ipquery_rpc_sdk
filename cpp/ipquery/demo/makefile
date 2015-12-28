@@ -1,6 +1,6 @@
 CXX=/home/haoyankai/software/gcc/bin/g++
 
-GEN_CPP_DIR := ../../../gen/gen-cpp
+GEN_CPP_DIR := ../
 GEN_SRC := $(GEN_CPP_DIR)/ipquery.cpp $(GEN_CPP_DIR)/ipquery_types.cpp $(GEN_CPP_DIR)/ipquery_constants.cpp ../IpqueryClient.cpp IpqueryTest.cpp 
 GEN_OBJ := $(patsubst %.cpp,%.o, $(GEN_SRC))
 
@@ -23,4 +23,4 @@ client: $(GEN_OBJ) IpqueryTest.o
 	$(CXX) $^ -L$(THRIFT_LIB_DIR) $(COMMON_LINKER) -o $@
 
 clean:
-	$(RM) ../../../gen/gen-cpp/*.o ../*.o *.o client 
+	$(RM) ../*.o ../*.o *.o client 

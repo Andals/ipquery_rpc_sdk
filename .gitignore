@@ -3,4 +3,4 @@
 *.swp
 *.swo
 
-sdk/cpp/test/client
+cpp/ipquery/demo/client

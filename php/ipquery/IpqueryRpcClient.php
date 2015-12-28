@@ -3,12 +3,12 @@
 namespace ipquery;
 
 define("THRIFT_LIB_DIR", dirname(__FILE__) . "/lib/");
-define("IPQUERY_LIB_DIR", dirname(__FILE__) . "/gen/gen-php/");
+define("IPQUERY_LIB_DIR", dirname(__FILE__));
 
 require_once THRIFT_LIB_DIR . 'Thrift/ClassLoader/ThriftClassLoader.php';
 
-require_once IPQUERY_LIB_DIR . 'Types.php';
-require_once IPQUERY_LIB_DIR . 'ipquery.php';
+require_once IPQUERY_LIB_DIR . '/Types.php';
+require_once IPQUERY_LIB_DIR . '/ipquery.php';
 
 use Thrift\ClassLoader\ThriftClassLoader;
 
